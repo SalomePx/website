@@ -18,5 +18,25 @@ def tarifs():
 def formations():
     return render_template("formations.html")
 
+@app.route('/reiki')
+def reiki():
+    return render_template('reiki.html')
+
+@app.route('/hypnose')
+def hypnose():
+    return render_template('hypnose.html')
+
+@app.route('/sophrologie')
+def sophrologie():
+    return render_template('sophrologie.html')
+
+@app.route('/liens-transgenerationnels')
+def liens_transgenerationnels():
+    return render_template('liens_transgenerationnels.html')
+
+@app.route('/methode-leaa')
+def methode_leaa():
+    return render_template('methode_leaa.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

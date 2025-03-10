@@ -48,3 +48,57 @@
     height: 50px;
     width: auto;
 }
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Contenu du dropdown (caché par défaut) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(193, 178, 165) ;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+}
+
+/* Liens à l'intérieur du dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 0px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Effet hover sur les liens */
+.dropdown-content a:hover {
+    background-color: white ;
+    color: black;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Affichage du menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
