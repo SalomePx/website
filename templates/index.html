@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" >
+    <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="static/images/logo_black_big.png" alt="Logo" class="navbar-logo">
+        </div>
+        <div class="nav-links">
+            <a href="/">Accueil</a>
+            <a href="/about">À propos</a>
+            <a href="/tarifs">Prestations & tarifs</a>
+            <a href="/formations">Formations</a>
+        </div>
+        <div class="appointment-container">
+            <div class="appointment">
+                <a href="#">Prendre rendez-vous</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="beige-box">
+            <div class="text-container">
+                <p class="welcome-text">Bienvenue sur mon site</p>
+                <p class="brand-text">Harmonie &<br>Énergie by L.</p>
+                <div class="info-box">
+                    <p class="info-text">Dans un espace dédié au <span class="highlight">bien-être</span>, au sein d’un cabinet <span class="highlight">chaleureux</span> et accueillant, je vous accompagne avec <span class="highlight">professionnalisme</span> depuis de nombreuses années grâce à des techniques efficaces & variées.</p>
+                </div>
+                <div class="home-button-container">
+                    <a href="#specialites" class="home-btn-specialites">Mes spécialités</a>
+                    <a href="/formations" class="home-btn-formations">Mes formations</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="image-box"></div>
+    </div> 
+
+    <div class="full-width-banner">
+        <div class="banner-text">
+            <h1>Qui suis-je ?</h1>
+            <div class="banner-description">
+                <p> Je suis Laetitia, <span class="highlight-black">praticienne en Reiki Usui</span> depuis l’âge de 20 ans et aujoud'hui Maître enseignante.
+                    Passionnée par les approches énergétiques et le mieux-être, je me suis également formée à d’autres techniques 
+                    pour accompagner chacun sur son chemin de vie.<br><br>Depuis toujours, j’ai à cœur d’aider les personnes à apaiser
+                    leurs souffrances et à <span class="highlight-black">améliorer leur quotidien</span>, en leur offrant un espace bienveillant et harmonisant.
+                </p>
+            </div>
+            <div class="banner-button">
+                <a href="/about" class="btn-en-savoir-plus">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="white-container" id="specialites">
+        <h2>Découvrez mes spécialités</h2>
+        <p class="specialties-description">
+            J'ai 5 spécialités parmi le Reiki, l'Hypnose, la Sophrologie, les Liens transgénérationnels et la méthode LEAA.
+            Ces méthodes sont toutes reliées par leur rapport aux énergies et au bien-être. Cliquez sur une spécialité pour en découvrir davantage.
+        </p>
+    </div>
+
+    <div class="carousel">    
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="static/images/nature.jpg" alt="Image 1">
+                <h3>La Sophrologie</h3>
+                <p>Enlever toutes les tensions de votre corps au quotidien.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/mains.jpg" alt="Image 2">
+                <h3>Le Reiki</h3>
+                <p>Le reiki permet de réanimer les énergies profondes émanées par le corps.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/escaliers.jpg" alt="Image 3">
+                <h3>Hypnose</h3>
+                <p>L'hypnose permet de guérir des troubles inconscients du passé.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/fleurs.jpg" alt="Image 4">
+                <h3>La méthode LEAA</h3>
+                <p>Elle permet de se libérer de ses allergies induites par des évènements émotionnels.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/family_hands.jpg" alt="Image 5">
+                <h3>Les liens transgénérationnels</h3>
+                <p>Séparez-vous des émotions de votre génétique, et prenez votre nouvel air.</p>
+            </div>
+        </div>
+    
+    
+        <div class="carousel-controls">
+            <button class="prev-btn">&#10094;</button> 
+            
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+    
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="footer-left">
+                <p><strong>Cabinet 1</strong> <br>
+                    1 rue Maurice Leblanc <br>
+                    78290 Croissy-sur-Seine</p>
+            </div>
+    
+            <div class="footer-right">
+                <p><strong>Cabinet 2</strong> <br>
+                   21 rue Albert 1er <br>
+                   78110 Le Vésinet</p>
+            </div>
+        </div>
+    
+        <div class="footer-center">
+            <a href="https://www.instagram.com/harmonie_et_energie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+                <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/share/1AJeK7VDrN/?mibextid=wwXIfr" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Facebook">
+            </a>
+            <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                <img src="static/images/wellfuz.png" alt="Wellfuz">
+            </a>
+        </div>
+    
+        <div class="footer-right">
+        </div>
+    </footer>
+</body>
+</html>

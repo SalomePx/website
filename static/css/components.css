@@ -1,0 +1,98 @@
+/* Bouton "Prendre rendez-vous" */
+.appointment {
+    background-color: #789d78;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.appointment-container {
+    flex: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.appointment a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.appointment:hover {
+    background-color: #496549;
+}
+
+/* Footer par défaut */
+.footer {
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-family: 'TtRg', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-page .footer {
+    background-color: rgb(193, 178, 165);; 
+}
+
+.tarifs-page .footer {
+    background-color: #789d78; 
+}
+
+.formations-page .footer {
+    background-color: #d4c2f0; 
+}
+
+.footer-center img[src*="wellfuz.png"] {
+    width: 35px;
+    height: auto;
+    transform: scale(1.5); 
+    filter: grayscale(100%);
+}
+
+
+.footer-left,
+.footer-right {
+    text-align: left;
+}
+
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-center img {
+    width: 35px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-center img:hover {
+    transform: scale(1.2);
+}
+
+.footer-info {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    display: flex;
+    gap: 20px; 
+}
+
+.footer-left p strong,
+.footer-right p strong {
+    font-weight: bold;
+}

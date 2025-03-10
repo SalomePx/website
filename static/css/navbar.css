@@ -1,0 +1,50 @@
+/* Navbar transparente */
+.navbar {
+    position: fixed; 
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(193, 178, 165, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    flex: 4; 
+    align-items: center;
+    margin-left: 5%;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 30px; 
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; 
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+}
