@@ -40,7 +40,7 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: url('/static/images/path.jpg') center/cover no-repeat;
+    background: url('/static/images/sea_birds.jpg') top/cover no-repeat;
 }
 
 .banner-text {

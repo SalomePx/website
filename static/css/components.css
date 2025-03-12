@@ -40,7 +40,7 @@
 }
 
 .about-page .footer {
-    background-color: rgb(193, 178, 165);; 
+    background-color: rgb(193, 178, 165);
 }
 
 .tarifs-page .footer {
@@ -95,4 +95,8 @@
 .footer-left p strong,
 .footer-right p strong {
     font-weight: bold;
+}
+
+.footer-beige {
+    background-color: rgb(193, 178, 165);; 
 }
