@@ -28,7 +28,7 @@
     width: 100%;
     background-image: url('/static/images/reiki_desc.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;

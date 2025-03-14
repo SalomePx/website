@@ -40,7 +40,7 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: url('/static/images/sea_birds.jpg') top/cover no-repeat;
+    background: url('/static/images/path.jpg') center /cover no-repeat;
 }
 
 .banner-text {
@@ -88,7 +88,7 @@ body {
 
 .white-container {
     width: 100%; 
-    height: 250px; 
+    height: 300px; 
     font-family: 'Lovelace'; 
     font-size: 30px; 
     background-color: white;
@@ -127,14 +127,6 @@ body {
     padding-bottom: 100px;
 }
 
-.me-text {
-    font-size: 50px; 
-    font-weight: bold;
-    text-align: left;
-    color: white; 
-}
-
-
 .info-box {
     width: 70%;
     height: 80%;
@@ -150,7 +142,7 @@ body {
 .info-text {
     font-size: 20px;
     line-height: 1.5;
-    color: white;
+    color: #7E2D07;
     text-align: left;
     font-family: 'TtRg', sans-serif;
     padding: 30px;
@@ -175,9 +167,8 @@ body {
 .btn-en-savoir-plus {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
-    font-family: 'TtTh', sans-serif;
+    font-family: 'TtMd', sans-serif;
     font-size: 18px;
-    font-weight: bold;
     padding: 12px 24px;
     border-radius: 25px;
     text-decoration: none;
@@ -234,7 +225,22 @@ body {
     color: black;
     font-family: 'TtRg', sans-serif;
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 50px auto 0;
     line-height: 1.5;
 }
+
+.bottom-banner {
+    width: 100%;
+    height: 100px;
+    overflow: hidden; 
+}
+
+.bottom-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    
+}
+

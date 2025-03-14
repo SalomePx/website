@@ -1,6 +1,6 @@
 .beige-formations-container {
     width: 100%;
-    min-height: 1000px;
+    height: 2400px;
     background-color: rgb(193, 178, 165);
 }
 
@@ -10,37 +10,67 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-left: 10%;
+    color:  #50352D;
+}
+
+.formation-price {
+    color: #789d78;
+}
+
+.formations-box {
+    width: 70%;
+    height: min-content;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.formations-main-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 30px;
 }
 
 .formations-title {
     font-size: 60px;
     color: white;
     font-family: 'Lovelace', serif;
-    margin-top: 100px;
+    margin-top: 50px;
+    text-align: left;
 }
 
 .formations-description {
     font-size: 20px;
     color: white;
     font-family: 'TtRg', sans-serif;
-    max-width: 1300px;
-    margin-top: 30px;
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
     line-height: 1.6;
 }
 
-
 .formations-image {
     width: 300px;
-    height: 450px;
+    height: 300px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .formation-name {
     font-size: 40px;
-    color: rgb(124, 105, 105);
+    color: #7E2D07;
     font-family: 'Lovelace', serif;
     padding-bottom: 20px;
 }
@@ -48,20 +78,27 @@
 .formations-text {
     flex: 1;
     font-size: 18px;
-    color: black;
+    color:  #50352D;
     font-family: 'TtRg', sans-serif;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
 }
 
+.formation-separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid grey;
+    margin: 0px 0px 15px 0px; 
+    opacity: 0.2; 
+}
+
 .expand-btn {
     margin-top: 20px;
-    font-family: 'TtTh';
+    font-family: 'TtMd';
     background-color: rgba(255, 255, 255, 0.6);
     color: rgb(124, 105, 105);
     font-size: 16px;
-    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -74,25 +111,8 @@
     color: white;
 }
 
-.formations-box {
-    width: 80%;
-    height: 500px;
-    background-color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; 
-    justify-content: flex-start;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: height 0.5s ease-in-out;
-    overflow: hidden;
-}
-
-
 .formations-box.expanded {
-    height: 1000px; 
+    height: min-content; 
 }
 
 .photo-column {
@@ -112,4 +132,85 @@
 
 .formations-box.expanded .photo-column {
     display: flex;
+}
+
+/* Texte caché par défaut */
+.hidden-text {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #50352D;;
+    font-family: 'TtRg', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.formations-box.expanded .hidden-text {
+    display: block;
+}
+
+.formation-maitre-reiki .formations-image {
+    object-fit: cover; 
+    object-position: top; 
+}
+
+/* Styles pour la section des niveaux */
+.level-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.level-buttons button {
+    background-color: rgba(255, 255, 255, 0.515);
+    border: 1px solid #789d78;
+    color: #789d78;
+    font-family: "TtMd";
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.level-buttons button:hover {
+    background-color: #789d78;
+    color: white;
+}
+
+.level-buttons button.active {
+    background-color: #789d78;
+    color: white;
+}
+
+.level-content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'TtRg', sans-serif;
+    line-height: 1.6;
+}
+
+/* Mise en forme de la liste */
+.level-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.level-content ul li {
+    margin-bottom: 5px;
+}
+
+.section-title {
+    color: #7E2D07;
+    font-family: 'Lovelace';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price-desc-formation {
+    color: #789d78;
+    font-size: 16px;
 }

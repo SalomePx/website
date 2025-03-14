@@ -24,14 +24,14 @@
     object-fit: cover;
     background-position: bottom;
     background-size: cover; 
-    object-position: bottom;
+    object-position: center 80%;
 }
 
 .about-bottom-image {
     width: 100%;
     height: 33.33%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 70%;
 }
 
 .about-text-container {
