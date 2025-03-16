@@ -32,11 +32,11 @@ def sophrologie():
 
 @app.route('/liens-transgenerationnels')
 def liens_transgenerationnels():
-    return render_template('liens_transgenerationnels.html')
+    return render_template('lienstransgenerationnels.html')
 
 @app.route('/methode-leaa')
 def methode_leaa():
-    return render_template('methode_leaa.html')
+    return render_template('methodeleaa.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
