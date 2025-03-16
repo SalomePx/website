@@ -1,0 +1,142 @@
+/* Conteneur principal */
+.about-page-container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.about-image-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    border-bottom-right-radius: 60px;
+    overflow: hidden; 
+    position: relative;
+    z-index: 2;
+    margin-right: -60px;
+}
+
+.about-top-image {
+    width: 100%;
+    height: 66.66%; 
+    object-fit: cover;
+    background-position: bottom;
+    background-size: cover; 
+    object-position: center 80%;
+}
+
+.about-bottom-image {
+    width: 100%;
+    height: 33.33%;
+    object-fit: cover;
+    object-position: center 70%;
+}
+
+.about-text-container {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(193, 178, 165);
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 0 50px;
+    padding-left: 200px ;
+}
+
+.about-title {
+    font-family: 'Lovelace', serif;
+    font-size: 45px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.about-paragraph {
+    font-size: 22px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.about-subtitle {
+    width: 72%;
+    font-family: 'Lovelace', serif;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.about-list {
+    font-family: 'TtTh', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 0;
+    margin-left: 40px;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+/* Conteneur des boutons */
+.about-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style des boutons */
+.about-btn-specialites {
+    display: flex;
+    font-family: "TtRg";
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image à l'intérieur de l'icône */
+.about-btn-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Effet hover */
+.about-btn-specialites:hover {
+    background-color: black;
+    color: white;
+}
+
+.about-button-row {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.about-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement entre les deux lignes */
+    align-items: left;
+}
