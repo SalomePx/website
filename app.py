@@ -30,11 +30,11 @@ def hypnose():
 def sophrologie():
     return render_template('sophrologie.html')
 
-@app.route('/liens-transgenerationnels')
+@app.route('/lienstransgenerationnels')
 def liens_transgenerationnels():
     return render_template('lienstransgenerationnels.html')
 
-@app.route('/methode-leaa')
+@app.route('/methodeleaa')
 def methode_leaa():
     return render_template('methodeleaa.html')
 
