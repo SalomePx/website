@@ -214,3 +214,57 @@
     color: #789d78;
     font-size: 16px;
 }
+
+/* Styles du popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-content {
+    font-family: 'TtRg', sans-serif;
+    color: black;
+}
+
+.popup a {
+    color: #7E2D07;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton de fermeture */
+.close-popup-btn {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background: none; /* Pas de fond */
+    border: none; 
+}
+
+.popup-trigger {
+    color: #789d78;
+    text-decoration: underline;
+    cursor: pointer; 
+    font-family: "TtMd";
+}
+
+.popup-trigger:hover {
+    color: #5e815e; /* Changement de couleur au survol */
+}

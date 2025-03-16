@@ -8,6 +8,15 @@
     <script src="{{ url_for('static', filename='js/formations.js') }}"></script>
 
 </head>
+<!-- Popup Modal -->
+<div id="contactPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup-btn" onclick="closePopup()">&times;</span>
+        <h2>Contactez-moi</h2>
+        <p>Email : <a href="mailto:sophro.papereux@gmail.com">sophro.papereux@gmail.com</a></p>
+        <p>Téléphone : 06 61 34 72 98</p>
+    </div>
+</div>
 <body class="about-page">
 
     <nav class="navbar">
@@ -100,7 +109,7 @@
                         <button class="active" onclick="showLevelContent(1, this)">Niveau 1</button>
                         <button onclick="showLevelContent(2, this)">Niveau 2</button>
                         <button onclick="showLevelContent(3, this)">Niveau 3</button>
-                        <button onclick="showLevelContent(4, this)">Niveau 4</button>
+                        <button onclick="showLevelContent(4, this)">Niveau Maître</button>
                     </div>
             
                     <div id="level-content" class="level-content">
@@ -158,7 +167,9 @@
                         <div class="formation-name">Formation auto-hypnose</div>
                         <p>L’autohypnose aide à vaincre bien des situations. L’avantage est que cette méthode se pratique partout, n’importe quand et en toute autonomie. <br><br></p>
                         <hr class="formation-separator">
-                        <p class="formation-price">Formation individuelle ou en groupe : tarif sur demande
+                        <p class="formation-price">
+                            Formation individuelle ou en groupe : <span class="popup-trigger" onclick="openPopup()">tarif sur demande</span>
+                        </p>
                         </p>
                         <button class="expand-btn" onclick="toggleExpand(this)">Voir plus d'informations</button>
                     </div>

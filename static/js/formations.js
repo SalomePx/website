@@ -70,3 +70,13 @@ function showLevelContent(level, button) {
         }, 300); // Petite attente pour un effet plus fluide
     }
 }
+
+// Ouvre le popup
+function openPopup() {
+    document.getElementById("contactPopup").style.display = "block";
+}
+
+// Ferme le popup
+function closePopup() {
+    document.getElementById("contactPopup").style.display = "none";
+}
