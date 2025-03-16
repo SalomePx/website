@@ -31,11 +31,11 @@ def sophrologie():
     return render_template('sophrologie.html')
 
 @app.route('/lienstransgenerationnels')
-def liens_transgenerationnels():
+def lienstransgenerationnels():
     return render_template('lienstransgenerationnels.html')
 
 @app.route('/methodeleaa')
-def methode_leaa():
+def methodeleaa():
     return render_template('methodeleaa.html')
 
 if __name__ == '__main__':
