@@ -33,7 +33,7 @@ body {
 
 .full-width-banner {
     width: 100vw; 
-    height: 800px; 
+    height: 90vh; 
     display: flex;
     position: relative;
     justify-content: center;
@@ -54,15 +54,14 @@ body {
 }
 
 .banner-description {
-    width: 90%;
     height: 50%;
-    padding-top: 10px; 
+    padding-top: 1vh; 
     text-align: center;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.5vw;
     border-radius: 10px;
 }
 
