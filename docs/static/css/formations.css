@@ -20,16 +20,16 @@
 }
 
 .formations-box {
-    width: 70%;
+    width: 70vw;
     height: min-content;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     justify-content: flex-start;
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
+    padding: 2vh 2vw;
+    margin-top: 4vh;
+    border-radius: 1vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: height 0.5s ease-in-out;
     overflow: hidden;
@@ -39,50 +39,53 @@
     display: flex;
     flex-direction: row; 
     align-items: center;
-    gap: 30px;
+    gap: 3vh;
 }
 
 .formations-title {
-    font-size: 60px;
+    font-size: 5vmin;
     color: white;
     font-family: 'Lovelace', serif;
-    margin-top: 100px;
+    margin-top: 13vh;
     text-align: left;
 }
 
 .formations-description {
-    font-size: 20px;
+    font-size: 2vmin;
     color: white;
     font-family: 'TtRg', sans-serif;
-    width: 70%;
-    margin: 30px auto;
+    width: 70vw;
+    margin-top: 3vh;
     display: flex;
     align-items: center;
     line-height: 1.6;
 }
 
 .formations-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
+    height: 25vh;
+    width: 25vh;
+    aspect-ratio: 1 / 1;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 1vh;
     object-fit: cover;
 }
 
 .formation-name {
-    font-size: 40px;
+    font-size: 3vmin;
     color: #7E2D07;
     font-family: 'Lovelace', serif;
-    padding-bottom: 20px;
+    padding-bottom: 1vh;
 }
 
 .formations-text {
     flex: 1;
-    font-size: 18px;
+    font-size: 1.8vmin;
     color:  #50352D;
     font-family: 'TtRg', sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vh;
 }
 
 .formation-separator {
@@ -94,14 +97,14 @@
 }
 
 .expand-btn {
-    margin-top: 20px;
+    margin-top: 2vh;
     font-family: 'TtMd';
     background-color: rgba(255, 255, 255, 0.6);
     color: rgb(124, 105, 105);
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1.6vmin;
+    padding: 1vh 2vw;
     border: none;
-    border-radius: 20px;
+    border-radius: 2vh;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }

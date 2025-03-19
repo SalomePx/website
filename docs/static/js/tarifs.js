@@ -50,19 +50,36 @@ function showDetail(serviceName) {
             break;
         case 'Méthode LEAA':
             title.innerText = "Les prestations LEAA";
-            services = ["Séance 1", "Séance 2"];
+            services = ["Equilibrage des chakras aux cymbales tibétaines"];
             descriptions = [
-                "Libération émotionnelle assistée.",
-                "Techniques avancées de nettoyage énergétique."
+                "Les cymbales tibétaines sont des instruments anciens utilisé depuis des siècles au Tibet pour améliorer le bien-être général."
             ];
-            tarifs = ["50€ / séance", "60€ / séance"];
-            imageSrc = ["/static/images/fleurs.jpg", "/static/images/fleurs.jpg"];
+            tarifs = ["80€ / séance - 1h00 (min. 2 séances nécessaires)"];
+            imageSrc = ["/static/images/methode_leaa.jpg"];
+            largeDescriptions  = [
+                "Les cymbales tibétaines sont employées pour <span class='highlight'>l’équilibrage et l’harmonisation des chakras</span>. La sonorité apaisante et vibratoire des cymbales peut aider à réaligner les centres énergétiques du corps, favorisant ainsi un état de bien-être général.<br><br>"
+                + "En méthode LEAA ®, le praticien recherche d’éventuelles causes émotionnelles ayant provoqué une réaction dans le corps et les libère. S'opère alors, dans environ 80% des cas, une diminution ou une suppression de la réaction (hypersensibilité alimentaire, stress, colères, etc.) <br><br>"
+                + "La méthode LEAA® se déroule en différentes séquences :"
+                + "<ul class='benefits-list'>"
+                + "<li> Identifier l'origine émotionnelle des réactions</li>"
+                + "<li>Equilibrer le corps (soin énergétique)</li>"
+                + "<li>Supprimer les émotions bloquantes pour libérer les réactions du corps</li>"
+                + "<li>Augmenter les potentiels de chacun pour contribuer à un mieux-être global</li>"
+                + "</ul>",
+            ]
             break;
         case 'Sophrologie':
             title.innerText = "Les prestations de Sophrologie";
             services = ["Séance de Sophrologie"];
             descriptions = [
-                "Exercices de relaxation et visualisation.",
+                "Un minimum de 5 séances est nécessaire pour voir des résultats sur le long-terme.",
+            ];
+            largeDescriptions = [
+                "Une séance est découpée en trois temps et débute toujours par un temps d’accueil. Cette étape permet d’exprimer ses besoins, ses envies, mais également de faire connaître au sophrologue son état général qu’il soit physique ou émotionnel.  <br><br>"
+                + "Cet échange est suivi par l’enchaînement d’exercices de relaxation dynamique, qui sont des mouvements doux associés à la respiration. <br> <br> "
+                + "Puis vient la sophronisation, qui est une visualisation positive guidée par la voix du sophrologue. <br> <br> "
+                + "La séance se termine à nouveau par un temps d’échange, un moment qui permet d’exprimer les ressentis vécus au cours de la séance."
+
             ];
             tarifs = ["70€ / séance - 1h00"];
             imageSrc = ["/static/images/sophro_desc.jpg"];
@@ -85,14 +102,20 @@ function showDetail(serviceName) {
             break;
         case 'Liens transgénérationnels':
             title.innerText = "Les prestations de Liens transgénérationnels";
-            services = ["Etude du génosociogramme", "Coupure des liens"];
+            services = ["Psychogénéalogie", "Coupure des liens"];
             largeDescriptions = [
-                "todo",
-                "todo",
+                "La psychogénéalogie consiste à soulager la souffrance de quelqu’un en repartant de son arbre généalogique et en faisant des liens avec des événements marquants qui ont jalonné la vie de ses ancêtres."
+                +"Des loyautés invisibles, des syndromes anniversaires et des contrats de naissance peuvent ressortir de cette analyse et nous laisser croire que notre vie est influencée ou même déterminée par celle de nos ancêtres."
+                +"Le génosociogramme va servir de base à l’étude de notre famille ; il est une représentation graphique des relations et des événements au sein d’une famille, sur plusieurs générations."
+                +"Pour déjouer les tours de la transmission intergénérationnelle, nous pouvons lever les secrets de famille, chercher du sens ailleurs et remettre les parcours de nos aïeuls dans leurs contextes pour mieux nous en détacher."
+                +"La psychogénéalogie a donc deux objectifs principaux : "
+                +"<ul class='benefits-list'>"
+                +"<li>Faire prendre conscience de nos mécanismes familiaux et de cette famille qui habite en nous</li>"
+                +"<li>Nous aider à nous libérer des emprises familiales qui nous empêchent de vivre selon notre désir</li>",
                 "todo",
             ];
             descriptions = [
-                "todo",
+                "Votre situation se répète de génération en génération ? Un travail en psychogénéalogie vous aidera à mettre en lumière et alléger les traumatismes conscients et inconscients vécus et transmis par vos ancêtres.",
                 "Libération des schémas familiaux répétitifs et travail sur les héritages émotionnels inconscients."
             ];
             tarifs = ["80€ / séance - 1h00 (min. 3 séances)", "160€ le pack - 2h30 au total"];

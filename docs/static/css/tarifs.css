@@ -1,34 +1,37 @@
 /* Wrapper général */
 .services-wrapper {
     margin-top: 100px;
+    margin-left: 15vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
+    align-items: flex-start;
+    width: 60vw;
 }
 
 /* Containers de services à gauche */
 .service-container {
-    width: 400px;
-    height: 300px;
+    width: 40vw; 
+    height: 26vw;
+
+    max-width: 400px;
+    max-height: 300px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 1vh 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 1vw;
 }
+
 
 .service-container img {
-    width: 100%;
+    width: 100%; 
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    object-fit: cover; 
+    border-radius: 1vw;
 }
 
-.top-img-position {
-    object-position: center 25%; 
-}
 
 .service-item {
     display: flex;
@@ -36,30 +39,20 @@
     width: 400px;
     justify-content: space-between;
     padding-bottom: 30px;
+    cursor: pointer; 
 }
 
 .service-text {
-    font-size: 20px;
+    font-size: max(12px, 1.2vw);
     font-family: 'TtRg', sans-serif;
-}
-
-.arrow-container {
     display: flex;
     align-items: center;
-    cursor: pointer;
-}
-
-.arrow-text {
-    font-family: 'TtRg', sans-serif;
-    font-size: 15px;
-    color: gray;
-    margin-right: 5px;
+    gap: 0.2vh;
 }
 
 .chevron {
-    font-size: 18px;
-    font-weight: bold;
-    color: gray;
+    font-size: 1.2vw;
+    color: black;
 }
 
 /* Containers des séances par spé */
@@ -68,54 +61,54 @@
     width: 45%;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    position: fixed;
+    border-radius: 2vw;
+    position:fixed;
     top: 100px;
-    right: 100px;
-    bottom: 50px;
+    right: 4vw;
+    bottom: 1vw;
     flex-direction: column;    
     justify-content: left;
     align-items: center;
-    font-size: 24px;
+    font-size: 2vw;
     font-family: 'TtRg', sans-serif;
-    padding: 20px;
-    visibility: hidden;
+    visibility: visible;
     transition: visibility 0s, opacity 0.3s ease-in-out;
+    overflow-y: auto; 
+    margin-bottom: 1vh;
 }
 
 .service-image {
-    width: 150px; 
-    height: 150px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-right: 20px;
+    object-fit:fill;
+    border-radius: 2vw;
+    margin-right: 2vw;
 }
 
 .service-text-container {
-    font-size: 16px;
+    font-size: 0.95vw;
+    padding-right: 1vw;
     font-family: "TtRg";
     color: grey;
     display: flex;
     flex-direction: column;
     flex: 1; 
-    gap: 10px;  
+    gap: 0.5vw;  
 }
 
 .service-title {
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 1.4vw;
+    margin-bottom: 0.4vw;
     color:#7E2D07;
 }
 
 .service-tarif {
-    font-size: 16px;
+    font-size:  max(12px, 0.9vmin);
     color: #789d78;
 }
 
 .tarifs-title {
     color: #7E2D07;
     font-family: 'Lovelace', serif;
-    font-size: 15px;
+    font-size: 0.8vw;
     font-weight: bold;
     display: block;
     margin-top: 5px;
@@ -123,12 +116,12 @@
 
 .tarif-green {
     color: #789d78; 
-    font-size: 16px;
+    font-size:  max(12px, 0.9vmin);
 }
 
 .tarif-black {
     color: black;
-    font-size: 16px;
+    font-size:  max(12px, 0.9vmin);
 }
 
 .detail-container.active {
@@ -138,17 +131,18 @@
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
+    top: 0.5vw;
+    right: 1.5vw;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 
 
 /* Titre tout en haut */
 .detail-title {
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size:  max(12px, 1.5vw);
+    margin-bottom: 1vw;
+    margin-top: 1vw;
     font-family: "Lovelace";
     font-weight: 500;
     color: #7E2D07;
@@ -160,31 +154,32 @@
     flex-direction: row; 
     align-items: center;
     width: 100%;
-    padding: 5px 20px 0px 20px;
-    height: min-content;
+    height: 30vw;
 }
 
 .service-box {
     width: 95%;
+    height: 25vh;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    margin-bottom: 1vh;
+    border-radius: 2vw;
     transition: all 0.3s ease-in-out;
-    overflow: hidden; 
+    overflow:scroll; 
 }
 
 .service-box img {
-    width: 220px; 
-    height: 220px;
+    width: min(25vw, 25vh); 
+    height: min(25vw, 25vh); 
+    max-width: 220px;
+    max-height: 220px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 20px;
-    margin-right: 15px;
-    padding: 20px;
-    margin-bottom: 10px;
+    border-radius: 2vw;
+    padding: 1vh 0.5vw 1vh 0.5vw;
 }
 
 .highlight {
@@ -199,10 +194,10 @@
     color: white; 
     border: none;
     font-family: "TtMd";
-    border-radius: 25px; 
-    padding: 10px 10px;
+    border-radius: 2vw; 
+    padding: 0.6vw 0.6vw;
     cursor: pointer;
-    font-size: 14px;
+    font-size: max(12px, 0.85vmin);
     width: fit-content; 
     display: block;
 }
@@ -210,14 +205,14 @@
 /* Grande description */
 .large-description-container {
     width: 100%;
-    padding: 0px 40px 30px 40px ;
+    padding: 0px 2vw 1.5vw 2vw ;
     background-color: rgba(255, 255, 255, 0.3); 
-    border-radius: 10px;
+    border-radius: 1vw;
     display: none;
 }
 
 .large-description {
-    font-size: 15px;
+    font-size: max(12px, 0.9vw);
     color: black;
     line-height: 1.5;
 }
@@ -230,12 +225,18 @@
 }
 
 .benefits-list {
-    padding-left: 20px; /* Décale légèrement les puces */
-    list-style-type: disc; /* Affiche des puces standards */
+    padding-left: 2vw; 
+    list-style-type: disc; 
 }
 
 .benefits-list li {
-    margin-bottom: 10px; /* Ajoute un espacement entre chaque élément */
-    font-size: 15px;
+    margin-bottom: 10px; 
+    font-size:  max(12px, 0.9vw);
     line-height: 1.3;
+}
+
+.footer-banner {
+    width: 100%; 
+    height: 20vh; 
+    background-color: rgb(225, 215, 200);
 }
