@@ -51,7 +51,7 @@
 }
 
 .formations-description {
-    font-size: max(2.8vmin, 14px);
+    font-size: max(2.5vmin, 14px);
     color: white;
     font-family: 'TtRg', sans-serif;
     width: 70vw;
@@ -138,7 +138,7 @@
 .hidden-text {
     display: none;
     margin-top: 20px;
-    font-size: max(2.4vmin, 14px);
+    font-size: max(2.1vmin, 14px);
     color: #50352D;;
     font-family: 'TtRg', sans-serif;
     line-height: 1.6;

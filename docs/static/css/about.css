@@ -57,7 +57,7 @@
 
 .about-title {
     font-family: 'Lovelace', serif;
-    font-size: min(4.5vmin, 12px);
+    font-size: max(4.5vmin, 12px);
     margin-top: 150px;
     margin-bottom: 0.5vh;
 }
