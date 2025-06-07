@@ -98,7 +98,7 @@
 }
 
 .service-description {
-    font-size: max(2.1vmin, 14px);
+    font-size: max(1.8vmin, 14px);
     padding-right: 1vw;
     font-family: "TtRg";
     color: grey;
@@ -109,14 +109,14 @@
 }
 
 .service-tarif {
-    font-size:  max(14px, 2.1vmin);
+    font-size:  max(14px, 1.8vmin);
     color: #789d78;
 }
 
 .tarifs-title {
     color: #7E2D07;
     font-family: 'Lovelace', serif;
-    font-size: max(2.1vmin, 14px);
+    font-size: max(1.8vmin, 14px);
     font-weight: bold;
     display: block;
     margin-top: 5px;
@@ -124,12 +124,12 @@
 
 .tarif-green {
     color: #789d78; 
-    font-size:  max(2.1vmin, 14px);
+    font-size:  max(1.8vmin, 14px);
 }
 
 .tarif-black {
     color: black;
-    font-size:  max(2.1vmin, 14px);
+    font-size:  max(1.8vmin, 14px);
 }
 
 .detail-container.active {
