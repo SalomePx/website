@@ -10,15 +10,21 @@ function showDetail(serviceName) {
     let largeDescriptions = [];
     let tarifs = [];
     let imageSrc = [];
+    let appointmentLinks = []; 
 
     switch(serviceName) {
         case 'Hypnose':
             title.innerText = "Les prestations d'Hypnose";
             services = ["Hypnose au quotidien", "Hypnose et addictions", "Hypnose et gestion du poids"];
+            appointmentLinks = [
+                "https://schedule.fillout.com/t/fGyRzqmXA7us",
+                "https://schedule.fillout.com/t/6Adg94YBu8us",
+                "https://schedule.fillout.com/t/kdYkGUopmCus"
+            ];
             descriptions = [
                 "L’hypnose peut apporter de nombreux bienfaits au quotidien.",
                 "Les dépendances addictives nuisent autant à vous qu’à votre entourage. Si vous désirez vous en libérer, l’hypnose peut vous y aider.",
-                "L'hypnose vous réapprend à <span class='highlight'>manger en conscience</span>, en domptant vos troubles alimentaires et leurs origines."
+                "L'hypnose vous réapprend à manger en conscience, en domptant vos troubles alimentaires et leurs origines."
             ];
             largeDescriptions = [
                "L’hypnose peut apporter de nombreux bienfaits au quotidien, tant sur le plan mental que physique. Voici quelques-uns de ses effets positifs :<br><br>"
@@ -51,6 +57,9 @@ function showDetail(serviceName) {
         case 'Méthode LEAA':
             title.innerText = "Les prestations LEAA";
             services = ["Equilibrage des chakras aux cymbales tibétaines"];
+            appointmentLinks = [
+                "https://schedule.fillout.com/t/9N5X18w6xSus",
+            ];
             descriptions = [
                 "Les cymbales tibétaines sont des instruments anciens utilisé depuis des siècles au Tibet pour améliorer le bien-être général."
             ];
@@ -71,6 +80,9 @@ function showDetail(serviceName) {
         case 'Sophrologie':
             title.innerText = "Les prestations de Sophrologie";
             services = ["Séance de Sophrologie"];
+            appointmentLinks = [
+                "https://schedule.fillout.com/t/bfMyp3toq2us",
+            ];
             descriptions = [
                 "Un minimum de 5 séances est nécessaire pour voir des résultats sur le long-terme.",
             ];
@@ -87,15 +99,39 @@ function showDetail(serviceName) {
         case 'Reiki':
             title.innerText = "Les prestations de Reiki";
             services = ["Séance sur mesure", "Forfait de 4 séances", "Forfait 4 séances + 21 jours à distance"];
+            appointmentLinks = [
+                "https://schedule.fillout.com/t/tb75BewpEDus",
+                "https://schedule.fillout.com/t/scmzBgVfkYus",
+                "https://schedule.fillout.com/t/1Y9j2soZ5Mus"
+            ];
             descriptions = [
-                "Une séance sur mesure en fonction de vos besoins et de mes ressentis avec le Reiki.",
+                "Le Reiki est une méthode japonaise de soin énergétique qui vise à rétablir l’équilibre naturel du corps et de l’esprit. Chaque séance est personnalisée selon vos besoins pour favoriser détente, apaisement et harmonie intérieure.",
                 "Ces 4 séances permettent de redynamiser le corps et l'esprit, réduire les tensions et les blocages énergétiques et ainsi retrouver plus de sérénité.",
                 "En intégrant le Reiki dans votre routine de bien-être, vous pourrez bénéficier d’une meilleure gestion du stress et d’une harmonie intérieure renforcée."
             ];
             largeDescriptions = [
-                "todo",
-                "todo",
-                "todo",
+                "<span class='tarifs-title'>Déroulé d'une séance : </span>"
+                + "Avant et après la séance, un <span class='highlight'>temps d’échange</span> peut être proposé afin d’accueillir votre ressenti ou poser vos intentions.<br><br>"
+                + "Pendant la séance, vous restez habillé(e) et vous vous allongez confortablement sur une table de massage. Il est recommandé de <span class='highlight'>fermer les yeux</span> pour favoriser la détente et mieux percevoir la circulation de l’énergie.<br><br>"
+                + "Le praticien place doucement ses mains sur différentes zones de votre corps, ou les maintient à quelques centimètres, selon des positions précises. <span class='highlight'>L’énergie</span> se dirige alors naturellement vers les endroits qui en ont le plus besoin.<br><br>"
+                + "Au fil de la séance, vous pouvez ressentir de la chaleur, du froid, des picotements, ou d’autres <span class='highlight'>sensations corporelles</span>. Ces perceptions sont propres à chacun et varient d’une séance à l’autre."
+                + "Peu à peu, un état de <span class='highlight'>relaxation profonde</span> s’installe. Les bienfaits du soin peuvent se prolonger bien au-delà de la séance, en apportant un mieux-être global, aussi bien physique qu’émotionnel.<br><br>",
+               
+                "Une seule séance procure un réel bien-être et peut initier un changement, mais il est souvent nécessaire d’envisager plusieurs séances pour un  <span class='highlight'>travail en profondeur</span>.<br><br>"
+                + "Les 4 séances rapprochées vont agir comme un “booster” et permettre dès  le début de concentrer et  <span class='highlight'>renforcer les bienfaits</span> de l’énergie Reiki.<br><br>"
+                + "<ul class='benefits-list'>"
+                + "<li> 1ère déance : votre corps va faire  <span class='highlight'>le plein d’énergie reiki</span> et vous procurer une grande sensation de bien-être et de vitalité nouvelle. Ce sont les endroits de votre corps qui en ont le plus besoin d’énergie qui seront remplis. "
+                + "Mais le Reiki va bien au-delà de cela, et les prochaines séances nous y amènent.</li>"
+                + "<li> 2ème séance : avec une nouvelle dose d’énergie, le corps peut travailler plus en profondeur. Cette séance soutient  <span class='highlight'>l’évacuation des blocages énergétiques</span> et stimule la régénération interne.</li>"
+                + "<li> 3ème séance : le corps est prêt à initier un  <span class='highlight'>changement positif</span>. Les tensions énergétiques résiduelles s’atténuent, ouvrant la voie à un cercle vertueux où les bienfaits s’auto-alimentent : réduction du stress, meilleure vitalité et clarté émotionnelle.</li>"
+                + "<li> 4ème séance : le travail réalisé se consolide. Elle permet non seulement de stabiliser l’énergie, mais aussi de créer un terrain favorable pour des  <span class='highlight'>améliorations durables</span>."
+                + "</ul>"
+                + "A la suite de ces 4 séances, certaines personnes pourront reprendre une séance quelque temps plus tard, d’autres auront envie de se former au Reiki pour pratiquer sur eux et leurs proches.",
+
+                "En plus des 4 séances de Reiki décrites plus haut, j’y ajoute <span class='highlight'>21 jours à distance</span>.<br><br>"
+                + "C'est-à-dire que pendant 21 jours, je vais <span class='highlight'>“mettre à disposition l'énergie reiki dont le destinataire peut avoir besoin à ce moment là”</span>.<br><br>"
+                + "Dans un premier temps l’énergie passera à travers les corps subtils du consultant jusqu’à un certain point, sans que la personne ait la moindre réaction. Mais à un moment il y aura une réaction au <span class='highlight'>niveau inconscient</span> et si elle est d’accord, avec l’arrivée de cette énergie , elle va le prendre, l’absorber.<br><br>"
+                + "Si elle n’est pas d’accord, elle la rejettera.",
              ];
             tarifs = ["80€ / séance - 1h00", "290€ le pack - 4h30 au total", "390€ le pack - 4h30 sur place"];
             imageSrc = ["/static/images/reiki_1.jpg", "/static/images/reiki_2.jpg","/static/images/reiki_3.jpg"];
@@ -103,16 +139,23 @@ function showDetail(serviceName) {
         case 'Liens transgénérationnels':
             title.innerText = "Les prestations de Liens transgénérationnels";
             services = ["Psychogénéalogie", "Coupure des liens"];
+            appointmentLinks = [
+                "https://schedule.fillout.com/t/64PjmRQEYeus",
+                "https://schedule.fillout.com/t/xrcRxfSzs4us"
+            ];
             largeDescriptions = [
-                "La psychogénéalogie consiste à soulager la souffrance de quelqu’un en repartant de son arbre généalogique et en faisant des liens avec des événements marquants qui ont jalonné la vie de ses ancêtres."
-                +"Des loyautés invisibles, des syndromes anniversaires et des contrats de naissance peuvent ressortir de cette analyse et nous laisser croire que notre vie est influencée ou même déterminée par celle de nos ancêtres."
-                +"Le génosociogramme va servir de base à l’étude de notre famille ; il est une représentation graphique des relations et des événements au sein d’une famille, sur plusieurs générations."
-                +"Pour déjouer les tours de la transmission intergénérationnelle, nous pouvons lever les secrets de famille, chercher du sens ailleurs et remettre les parcours de nos aïeuls dans leurs contextes pour mieux nous en détacher."
-                +"La psychogénéalogie a donc deux objectifs principaux : "
-                +"<ul class='benefits-list'>"
-                +"<li>Faire prendre conscience de nos mécanismes familiaux et de cette famille qui habite en nous</li>"
-                +"<li>Nous aider à nous libérer des emprises familiales qui nous empêchent de vivre selon notre désir</li>",
-                "todo",
+                "La psychogénéalogie consiste à <span class='highlight'>soulager la souffrance</span> de quelqu’un en repartant de son arbre généalogique et en faisant des liens avec des événements marquants qui ont jalonné la vie de ses ancêtres.<br><br>"
+                + "Des loyautés invisibles, des syndromes anniversaires et des contrats de naissance peuvent ressortir de cette analyse et nous laisser croire que notre vie est <span class='highlight'>influencée ou même déterminée</span> par celle de nos ancêtres.<br><br>"
+                + "Le <span class='highlight'>génosociogramme</span> va servir de base à l’étude de notre famille ; il est une représentation graphique des relations et des événements au sein d’une famille, sur plusieurs générations.<br>"
+                + "Pour déjouer les tours de la transmission intergénérationnelle, nous pouvons lever les secrets de famille, chercher du sens ailleurs et remettre les parcours de nos aïeuls dans leurs contextes pour mieux nous en détacher.<br><br>"
+                + "La psychogénéalogie a donc deux objectifs principaux : "
+                + "<ul class='benefits-list'>"
+                + "<li>Faire <span class='highlight'>prendre conscience</span> de nos mécanismes familiaux et de cette famille qui habite en nous</li>"
+                + "<li>Nous aider à nous <span class='highlight'>libérer des emprises familiales</span> qui nous empêchent de vivre selon notre désir</li>"
+                + "</ul>",
+
+                "Prendre conscience de <span class='highlight'>l’histoire de nos ancêtres</span> et la manière dont ils ont vécu permet de mettre en lumière vos comportements et vos schémas répétitifs conscients ou inconscients.<br><br>"
+                + "A partir de là, je vais effectuer un soin énergétique sur ces schémas pour <span class='highlight'>couper les liens répétitifs</span> qui vous entravent et harmoniser les connexions positives et  d’amour afin de vous permettre de prendre votre place au présent et de vous projeter dans l’avenir.",
             ];
             descriptions = [
                 "Votre situation se répète de génération en génération ? Un travail en psychogénéalogie vous aidera à mettre en lumière et alléger les traumatismes conscients et inconscients vécus et transmis par vos ancêtres.",
@@ -156,9 +199,25 @@ function showDetail(serviceName) {
         tarif.innerText = tarifs[index];
         tarif.classList.add("service-tarif");
     
+         // Bouton "Découvrir plus"
         let discoverButton = document.createElement("button");
         discoverButton.innerText = "Découvrir plus";
         discoverButton.classList.add("discover-button");
+
+        // Bouton "Prendre rendez-vous"
+        let appointmentButton = document.createElement("a");
+        appointmentButton.href = appointmentLinks[index] || "#";
+        appointmentButton.target = "_blank";
+        appointmentButton.innerText = "Prendre rendez-vous";
+        appointmentButton.classList.add("appointment-btn");
+
+        // Groupe de boutons côte à côte
+        let buttonGroup = document.createElement("div");
+        buttonGroup.style.display = "flex";
+        buttonGroup.style.flexWrap = "wrap";
+        buttonGroup.style.gap = "10px";
+        buttonGroup.appendChild(discoverButton);
+        buttonGroup.appendChild(appointmentButton);
     
         // Grande description container
         let largeDescriptionContainer = document.createElement("div");
@@ -195,7 +254,7 @@ function showDetail(serviceName) {
         textContainer.appendChild(text);
         textContainer.appendChild(description);
         textContainer.appendChild(tarif);
-        textContainer.appendChild(discoverButton);
+        textContainer.appendChild(buttonGroup);
     
         // Ajouter image et texte dans contentContainer
         contentContainer.appendChild(img);

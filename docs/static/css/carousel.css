@@ -12,7 +12,7 @@
     gap: 50px; 
     transition: transform 0.5s ease-in-out;
     will-change: transform;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .carousel-item {
@@ -48,14 +48,15 @@
 }
 
 .carousel-item h3 {
-    font-size: 20px;
+    font-size: max(2.7vmin, 16px);
     margin-top: 10px;
     font-family: 'TtRg';
 }
 
 .carousel-item p {
-    font-size: 16px;
+    font-size: max(2vmin, 16px);
     color: #666;
+    margin-top: 10px;
 }
 
 .carousel-item:first-child img {
@@ -84,7 +85,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: max(1.8vmin, 12px);
     border-radius: 50%;
     width: 40px;
     height: 40px;

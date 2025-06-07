@@ -67,7 +67,7 @@ body {
 
 .banner-text h1 {
     font-family: 'Lovelace', serif;
-    font-size: 48px;
+    font-size: max(5.5vmin, 20px);
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -76,7 +76,7 @@ body {
 
 .banner-text p {
     font-family: 'TtRg', sans-serif;
-    font-size: 20px; 
+    font-size: max(2.5vmin, 14px); 
     font-weight: 400;
     max-width: 60%;
     margin: 0 auto;
@@ -89,7 +89,7 @@ body {
     width: 100%; 
     height: 300px; 
     font-family: 'Lovelace'; 
-    font-size: min(3vh, 3vw); 
+    font-size: max(3vmin, 20px); 
     background-color: white;
     border-radius: 9vh 9vh 0px 0px;
     padding: 50px 20px 0px 20px; 
@@ -110,7 +110,7 @@ body {
 }
 
 .welcome-text {
-    font-size: 25px; 
+    font-size: max(3.5vmin, 16px); 
     font-family: 'TtTh', sans-serif; 
     text-align: center; 
     margin-bottom: 10px; 
@@ -119,7 +119,7 @@ body {
 }
 
 .brand-text {
-    font-size: 80px; 
+    font-size: max(9.5vmin, 30px); 
     font-weight: bold;
     text-align: left;
     color: white; 
@@ -139,7 +139,7 @@ body {
 }
 
 .info-text {
-    font-size: 20px;
+    font-size: max(3vmin, 20px);
     line-height: 1.5;
     color: #7E2D07;
     text-align: left;
@@ -167,7 +167,7 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     font-family: 'TtMd', sans-serif;
-    font-size: 18px;
+    font-size: max(2.3vmin, 13px);
     padding: 12px 24px;
     border-radius: 25px;
     text-decoration: none;
@@ -184,31 +184,33 @@ body {
     margin-top: 20px;
 }
 
+.home-button-container {
+    margin-top: 10px;
+}
+
 /* Styles généraux pour les boutons */
 .home-btn-specialites {
     background-color: white ;
     color: black;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: max(3vmin, 14px);
     padding: 12px 24px;
-    border-radius: 20px;
+    border-radius: 3vmin;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
     text-align: center;
-    font-family: "TtTh";
+    font-family: "TtRg";
 }
 
 .home-btn-formations {
     background-color: #789d78;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: max(3vmin, 14px);
     padding: 12px 24px;
-    border-radius: 20px;
+    border-radius: 3vmin;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
     text-align: center;
-    font-family: "TtTh";
+    font-family: "TtRg";
 }
 
 .home-btn-specialites:hover{
@@ -220,7 +222,7 @@ body {
 }
 
 .specialties-description {
-    font-size: min(2vh, 2vw);
+    font-size: max(2.1vmin, 14px);
     color: black;
     font-family: 'TtRg', sans-serif;
     text-align: center;

@@ -51,7 +51,7 @@
 }
 
 .formations-description {
-    font-size: 2vmin;
+    font-size: max(2.8vmin, 14px);
     color: white;
     font-family: 'TtRg', sans-serif;
     width: 70vw;
@@ -63,16 +63,13 @@
 
 .formations-image {
     height: 25vh;
-    width: 25vh;
     aspect-ratio: 1 / 1;
-    max-width: 300px;
-    max-height: 300px;
     border-radius: 1vh;
     object-fit: cover;
 }
 
 .formation-name {
-    font-size: 3vmin;
+    font-size: max(3.4vmin, 20px);
     color: #7E2D07;
     font-family: 'Lovelace', serif;
     padding-bottom: 1vh;
@@ -80,7 +77,7 @@
 
 .formations-text {
     flex: 1;
-    font-size: 1.8vmin;
+    font-size: max(2.3vmin, 14px);
     color:  #50352D;
     font-family: 'TtRg', sans-serif;
     padding-left: 3vw;
@@ -101,7 +98,7 @@
     font-family: 'TtMd';
     background-color: rgba(255, 255, 255, 0.6);
     color: rgb(124, 105, 105);
-    font-size: 1.6vmin;
+    font-size: max(2vmin, 14px);
     padding: 1vh 2vw;
     border: none;
     border-radius: 2vh;
@@ -141,7 +138,7 @@
 .hidden-text {
     display: none;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: max(2.4vmin, 14px);
     color: #50352D;;
     font-family: 'TtRg', sans-serif;
     line-height: 1.6;
@@ -190,7 +187,7 @@
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
-    font-size: 16px;
+    font-size: max(2.2vmin, 14px);
     font-family: 'TtRg', sans-serif;
     line-height: 1.6;
 }
@@ -209,13 +206,13 @@
 .section-title {
     color: #7E2D07;
     font-family: 'Lovelace';
-    font-size: 16px;
+    font-size: max(2.4vmin, 14px);
     font-weight: 600;
 }
 
 .price-desc-formation {
     color: #789d78;
-    font-size: 16px;
+    font-size: max(2.2vmin, 12px);
 }
 
 /* Styles du popup */

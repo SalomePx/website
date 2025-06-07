@@ -12,10 +12,8 @@
 .service-container {
     width: 40vw; 
     height: 26vw;
-
     max-width: 400px;
     max-height: 300px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +41,7 @@
 }
 
 .service-text {
-    font-size: max(12px, 1.2vw);
+    font-size: max(16px, 1.2vw);
     font-family: 'TtRg', sans-serif;
     display: flex;
     align-items: center;
@@ -78,13 +76,29 @@
 }
 
 .service-image {
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 2vw;
     margin-right: 2vw;
 }
 
 .service-text-container {
-    font-size: 0.95vw;
+    padding-right: 1vw;
+    font-family: "TtRg";
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 0.5vw;  
+}
+
+.service-title {
+    font-size: max(3vmin, 16px);
+    margin-bottom: 0.4vw;
+    margin-top: 20px;
+    color:#7E2D07;
+}
+
+.service-description {
+    font-size: max(2.1vmin, 14px);
     padding-right: 1vw;
     font-family: "TtRg";
     color: grey;
@@ -94,21 +108,15 @@
     gap: 0.5vw;  
 }
 
-.service-title {
-    font-size: 1.4vw;
-    margin-bottom: 0.4vw;
-    color:#7E2D07;
-}
-
 .service-tarif {
-    font-size:  max(12px, 0.9vmin);
+    font-size:  max(14px, 2.1vmin);
     color: #789d78;
 }
 
 .tarifs-title {
     color: #7E2D07;
     font-family: 'Lovelace', serif;
-    font-size: 0.8vw;
+    font-size: max(2.1vmin, 14px);
     font-weight: bold;
     display: block;
     margin-top: 5px;
@@ -116,12 +124,12 @@
 
 .tarif-green {
     color: #789d78; 
-    font-size:  max(12px, 0.9vmin);
+    font-size:  max(2.1vmin, 14px);
 }
 
 .tarif-black {
     color: black;
-    font-size:  max(12px, 0.9vmin);
+    font-size:  max(2.1vmin, 14px);
 }
 
 .detail-container.active {
@@ -152,9 +160,9 @@
 .content-container {
     display: flex;
     flex-direction: row; 
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    height: 30vw;
+    height: 25vh;
 }
 
 .service-box {
@@ -165,21 +173,18 @@
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
     border-radius: 2vw;
     transition: all 0.3s ease-in-out;
     overflow:scroll; 
 }
 
 .service-box img {
-    width: min(25vw, 25vh); 
-    height: min(25vw, 25vh); 
-    max-width: 220px;
-    max-height: 220px;
+    height: 25vh; 
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 2vw;
-    padding: 1vh 0.5vw 1vh 0.5vw;
+    padding: 10px;
 }
 
 .highlight {
@@ -195,31 +200,52 @@
     border: none;
     font-family: "TtMd";
     border-radius: 2vw; 
-    padding: 0.6vw 0.6vw;
+    padding: 1vh 1vw;
     cursor: pointer;
-    font-size: max(12px, 0.85vmin);
+    font-size: max(14px, 1.8vmin);
     width: fit-content; 
     display: block;
+}
+
+.appointment-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-family: "TtMd";
+    border-radius: 2vw;
+    padding: 1vh 1vw;
+    font-size: max(14px, 1.8vmin);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #333;
 }
 
 /* Grande description */
 .large-description-container {
     width: 100%;
-    padding: 0px 2vw 1.5vw 2vw ;
+    height: 100%;
+    padding: 1.5vh 2vw ;
     background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 1vw;
     display: none;
 }
 
 .large-description {
-    font-size: max(12px, 0.9vw);
+    font-size: max(14px, 2vmin);
     color: black;
     line-height: 1.5;
+    
 }
 
 /* Expansion de la box */
 .service-box.expanded {
     height: 90%;
+    align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease-in-out;
 }
@@ -231,7 +257,7 @@
 
 .benefits-list li {
     margin-bottom: 10px; 
-    font-size:  max(12px, 0.9vw);
+    font-size: max(14px, 2vmin);
     line-height: 1.3;
 }
 

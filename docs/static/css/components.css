@@ -2,7 +2,7 @@
 .appointment {
     background-color: #789d78;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 3vmin;
     transition: 0.3s;
     text-align: center;
     font-family: "TtMd";
@@ -16,6 +16,7 @@
 }
 
 .appointment a {
+    font-size: max(2.3vmin, 18px);
     text-decoration: none;
     color: white;
     font-family: "TtMd";
