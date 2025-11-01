@@ -261,7 +261,13 @@
 .footer-banner {
     width: 100%; 
     height: 20vh; 
-     background-color: rgb(193, 178, 165);
+    background-color: rgb(193, 178, 165);
+}
+
+.footer-white {
+    width: 100%; 
+    height: 20vh; 
+    background-color: white;
 }
 
 .footer-banner-brown {
@@ -282,6 +288,18 @@
 @media (max-width: 768px) {
     .tarifs-mobile {
         display: block;
+    }
+
+    .title-rdv {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 180px;
+        font-family: 'Lovelace', serif;
+        font-size: max(4vmin, 20px);
+        color:#7E2D07;
     }
     
     .tarifs-desktop {
@@ -322,10 +340,29 @@
         border-color: #7E2D07;
     }
 
+    .welcome-screen {
+        margin-top: 0px;
+        text-align: center;
+        
+    }
+    .welcome-screen p {
+        font-family: 'TtRg', sans-serif;
+        font-size: max(4vmin,22px);
+        color: white;
+    }
+
+    .welcome-screen img {
+        width: 50px;
+        height: 50px;
+        object-fit:contain;
+        margin-top: 20px;
+    }
+
+
     /* Container de détails - commence sous le menu */
     .detail-container {
         position: relative;
-        margin-top: 180px;
+        margin-top: 30px;
         width: 95%;
         margin-left: auto;
         margin-right: auto;

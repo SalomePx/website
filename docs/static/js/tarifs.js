@@ -14,6 +14,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function showWelcomeScreen() {
+    const detailContainer = document.getElementById('detail-container-mobile');
+    
+    if (!detailContainer) return;
+    
+    detailContainer.innerHTML = `
+        <div class="welcome-screen">
+            <p class="welcome-text">Choisissez une spécialité dans l'onglet ci-dessus</p>
+            <img src="/static/images/logo_white.png" alt="Bienvenue" class="welcome-image">
+        </div>
+    `;
+    
+   detailContainer.classList.add("active");
+}
+
+// Modifiez le DOMContentLoaded pour afficher l'écran d'accueil au chargement
+document.addEventListener('DOMContentLoaded', function() {
+    const serviceSelect = document.getElementById('serviceSelect');
+    
+    // Afficher l'écran d'accueil au chargement
+    if (window.innerWidth <= 768) {
+        showWelcomeScreen();
+    }
+    
+    if (serviceSelect) {
+        serviceSelect.addEventListener('change', function() {
+            const selectedService = this.value;
+            if (selectedService) {
+                showDetail(selectedService, 'mobile');
+            } else {
+                showWelcomeScreen();
+            }
+        });
+    }
+});
+
 // Fonction pour déterminer si on est sur mobile ou desktop
 function isMobile() {
     return window.innerWidth <= 768;

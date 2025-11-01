@@ -76,7 +76,7 @@
 }
 
 .about-list {
-    font-family: 'TtTh', sans-serif;
+    font-family: 'TTRg', sans-serif;
     font-size: 18px;
     margin-top: 10px;
     padding-left: 0;
@@ -156,6 +156,24 @@
 
     .about-desktop { display: none; }
     .about-mobile { display: block; }
+
+    .footer-white-mobile {
+        width: 100%; 
+        height: 50px; 
+        background-color: white;
+    }
+
+    .footer-brown-mobile {
+        width: 100%; 
+        height: 50px; 
+        background-color: rgb(193, 178, 165);
+    }
+
+    .footer-banner-brown {
+        width: 100%; 
+        height: 10vh; 
+        background-color: rgb(193, 178, 165);
+    }
 
     /* Conteneur principal en colonne unique */
     .about-page-container {
@@ -248,8 +266,9 @@
     }
 
     .about-paragraph {
+        font-family: 'TTRg', sans-serif;
         width: 85%;   
-        font-weight: 600;       
+        font-weight: 300;       
         margin: 20px auto;   
         text-align: left;  
     }
