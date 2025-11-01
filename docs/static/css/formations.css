@@ -268,3 +268,152 @@
 .popup-trigger:hover {
     color: #5e815e; /* Changement de couleur au survol */
 }
+
+.formations-desktop {
+    display:  block;
+}
+.formations-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 0 !important;
+    }
+
+    .footer2 {
+        margin-top: 0 !important;
+    }
+    .formations-desktop {
+        display: none;
+    }
+    .formations-mobile {
+        display: block;
+    }
+
+    .formations-box {
+        width: 90vw;
+        padding: 2vh 3vw;
+    }
+
+     .formations-box {
+        width: 90vw;
+        padding: 2vh 3vw;
+    }
+
+    .formations-main-content {
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+    }
+
+    /* Container pour image + nom sur la même ligne */
+     .formations-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3vw;
+        width: 100%;
+    }
+
+    .formations-image {
+        height: 12vh;
+        width: 12vh;
+        min-width: 12vh;
+        flex-shrink: 0;
+    }
+
+    .formation-name {
+        flex: 1;
+        font-size: max(6vmin, 25px);
+        padding-bottom: 0;
+        line-height: 1.2;
+    }
+
+    .formations-title {
+        font-size: 6vmin;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .expand-btn {
+        width: 100%;
+        padding: 1.5vh 0;
+        font-size: max(2.5vmin, 14px);
+        margin-top: 2vh;
+    }
+
+    .level-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .level-buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .hidden-text {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px 0;
+    }
+
+    .level-content {
+        font-size: max(2.5vmin, 18px);
+        padding: 15px;
+    }
+
+    /* Le reste du contenu en dessous */
+    .formations-text {
+        font-size: max(2.6vmin, 18px);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        width: 100%;
+        clear: both;
+    }
+
+    .formations-description {
+        width: 90vw;
+        font-size: max(3vmin, 18px);
+        line-height: 1.4;
+    }
+
+    .formations-title {
+        font-size: 6vmin;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .expand-btn {
+        width: 100%;
+        padding: 1.5vh 0;
+        font-size: max(2.5vmin, 14px);
+        margin-top: 2vh;
+    }
+
+    .level-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .level-buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .hidden-text {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px 0;
+    }
+
+    .level-content {
+        font-size: max(2.5vmin, 14px);
+        padding: 15px;
+    }
+
+    .formation-separator {
+        clear: both;
+    }
+}

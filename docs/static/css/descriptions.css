@@ -255,3 +255,75 @@
     text-decoration: underline;
     color: #2F1002;
 }
+
+@media (max-width: 900px) {
+    .spe-banner {
+        width: 100%;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -40px;
+        z-index: 1;
+    }
+
+    .spe-banner-title {
+        padding: 10px 5px;
+        font-size: 20px;
+        font-family: "Lovelace";
+        font-weight: bold;
+        color: #50352D;
+        margin-top: 15px;
+    }
+
+    .spe-banner-content {
+        width: 85%;
+    }
+
+    .spe-banner-description {
+        font-size: 16px;
+        font-family: "TtRg";
+        color: white;
+        margin: 0.5vh 0 0 0;
+        line-height: 1.5;
+    }
+
+    .desc-hypnose {
+        color: #5C4A3D;
+    }
+
+    .spe-bottom-text-container {
+        width: 80%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .spe-bottom-subtitle {
+        text-align: left;
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: "Lovelace";
+        color: #50352D;
+        padding: 10px auto;
+    }
+
+    .spe-bottom-description {
+        text-align: left;
+        font-family: "TtRg";
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+    .spe-list li {
+        font-size: 16px;
+    }
+
+    .bottom-desc-reiki {
+        color: #7E2D07; 
+    }
+    
+}

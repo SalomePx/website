@@ -6,10 +6,16 @@
     <title>A propos de moi</title>
     <link rel="stylesheet" href="static/css/main.css" >
     <link rel="icon" type="image/png" href="static/images/icon.png">
+    <script src="static/js/burger.js"></script>
 </head>
 <body class="about-page">
 
     <nav class="navbar">
+        <div class="burger" aria-label="Menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo-container">
             <a href="/">
                 <img src="/static/images/logo_black.png" alt="Logo" class="navbar-logo">
@@ -38,8 +44,28 @@
         </div>
     </nav>
 
+    <div id="mobile-drawer" class="mobile-drawer">
+        <span class="close-drawer">&times;</span>
+
+        <a href="/">Accueil</a>
+        <a href="/about">À propos</a>
+        <a href="/tarifs">Prestations & tarifs</a>
+        <a href="/formations">Formations</a>
+        <div class="drawer-dropdown">
+            <span id="drawer-dropdown-btn" class="drawer-dropdown-btn">Mes spécialités &#9662;</span>
+            <div id="drawer-dropdown-content" class="drawer-dropdown-content" style="display: none;">
+                <a href="/reiki">Reiki</a>
+                <a href="/hypnose">Hypnose</a>
+                <a href="/sophrologie">Sophrologie</a>
+                <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                <a href="/methodeleaa">Méthode LEAA</a>
+            </div>
+        </div>
+        <a href="/tarifs">Prendre rendez-vous</a>
+    </div>
+
     <!-- Conteneur principal -->
-    <div class="about-page-container">
+    <div class="about-page-container about-desktop">
 
         <div class="about-image-container">
             <img src="static/images/laetitia_about.png" alt="Image 1" class="about-image about-top-image">
@@ -94,6 +120,69 @@
         </div>
     </div>
 
+    <div class="about-page-container about-mobile">
+        <!-- Première image -->
+        <div class="about-image-with-text">
+            <img src="static/images/laetitia_about.png" alt="Image 1" class="about-image about-top-image">
+            <h1 class="about-image-text">Découvrez-en plus sur moi</h1>
+        </div>
+
+        <!-- Contenu textuel et boutons -->
+        <div class="about-text-container">
+
+            <h2 class="about-subtitle">Laetitia, thérapeute depuis vingt ans</h2>
+
+            <p class="about-paragraph">Je suis passionnée par l'accompagnement et le bien-être. Mon objectif est d'aider chacun à retrouver un équilibre émotionnel et énergétique à travers des pratiques adaptées.</p>
+            <p class="about-paragraph">Grâce à mon expérience et mes formations, je propose des soins personnalisés qui favorisent la détente, la libération émotionnelle et l'alignement intérieur.</p>
+            <p class="about-paragraph">Chaque parcours est unique, et je suis là pour vous guider dans cette aventure vers plus d'harmonie et de sérénité.</p>
+            
+            <h2 class="about-subtitle about-subtitle-specialites">Mes spécialités</h2>
+            <div class="about-button-container">
+                <div class="about-button-row">
+                    <a href="/methodeleaa" class="about-btn-specialites">
+                        <span class="about-btn-icon"><img src="/static/images/methode_leaa_desc.jpg" alt="Méthode LEAA"></span>
+                        Méthode LEAA
+                    </a>
+                    <a href="/sophrologie" class="about-btn-specialites">
+                        <span class="about-btn-icon"><img src="/static/images/sophro_desc.jpg" alt="Sophrologie"></span>
+                        Sophrologie
+                    </a>
+                </div>
+                <div class="about-button-row">
+                    <a href="/hypnose" class="about-btn-specialites">
+                        <span class="about-btn-icon"><img src="static/images/escaliers.jpg" alt="Hypnose"></span>
+                        Hypnose
+                    </a>
+                    <a href="/reiki" class="about-btn-specialites">
+                        <span class="about-btn-icon"><img src="static/images/mains.jpg" alt="Reiki"></span>
+                        Reiki
+                    </a>
+                </div>
+                <div class="about-button-row">
+                    <a href="/lienstransgenerationnels" class="about-btn-specialites">
+                        <span class="about-btn-icon"><img src="/static/images/family_hands.jpg" alt="Liens transgénérationnels"></span>
+                        Liens transgénérationnels
+                    </a>
+                </div>
+            </div>
+
+            <h2 class="about-subtitle about-subtitle-formations">Mes diplômes et formations</h2>
+            <ul class="about-list">
+                <li>Formation en Reiki - Niveau Maître Enseignant</li>
+                <li>Certification en Hypnose Ericksonienne - Spécialisation en gestion du poids et arrêt du tabac</li>
+                <li>Diplôme en Sophrologie - IFS Paris</li>
+            </ul>
+
+        </div>
+
+        <!-- Deuxième image -->
+        <div class="about-image-container">
+            <img src="static/images/pierres2.jpg" alt="Image 2" class="about-image about-bottom-image">
+        </div>
+
+    </div>
+
+
     <!-- Footer -->
     <div class="footer-banner-brown"></div>
     <footer class="footer">
@@ -133,7 +222,7 @@
                 <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
                     <img src="/static/images/wellfuz.png" alt="Wellfuz">
                 </a>
-                <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                <a href="https://www.ailesndavid.com/" target="_blank">
                     <img src="/static/images/ailesndavid.png" alt="Ailes N David">
                 </a>
             </div>
@@ -142,7 +231,7 @@
 
     <div class="footer2">
         <div class="footer2-socials">
-            <a href="https://www.instagram.com/harmonie_et_energie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+            <a href="https://www.instagram.com/energie_et_harmonie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
                 <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
             </a>
             <a href="https://www.facebook.com/share/1AJeK7VDrN/?mibextid=wwXIfr" target="_blank">

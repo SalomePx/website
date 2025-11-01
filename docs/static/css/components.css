@@ -57,7 +57,6 @@
 
 .footer-right img[src*="ailesndavid.png"] {
     width: 2.5vw;
-
     max-width: 30px;
     height: auto;
     transform: scale(1.5); 
@@ -219,6 +218,4 @@
     font-family: "TtTh";
     font-weight: normal;
 }
-
-
 

@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         container.style.transform = `translateX(${offset}px)`;
 
+        const prevBtn = document.querySelector(".prev-btn");
+        prevBtn.style.visibility = (slideIndex === 0) ? "hidden" : "visible";
+
+        const nextBtn = document.querySelector(".next-btn");
+        nextBtn.style.visibility = (slideIndex === totalSlides - 1) ? "hidden" : "visible";
+
         slides.forEach((slide, i) => {
             slide.classList.remove("active", "prev", "next");
             slide.style.opacity = "0.5";
@@ -63,3 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateCarousel();
 });
+

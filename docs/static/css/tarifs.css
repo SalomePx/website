@@ -1,4 +1,5 @@
 /* Wrapper général */
+
 .services-wrapper {
     margin-top: 100px;
     margin-left: 15vw;
@@ -22,14 +23,12 @@
     border-radius: 1vw;
 }
 
-
 .service-container img {
     width: 100%; 
     height: 100%;
     object-fit: cover; 
     border-radius: 1vw;
 }
-
 
 .service-item {
     display: flex;
@@ -60,7 +59,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 2vw;
-    position:fixed;
+    position: fixed;
     top: 100px;
     right: 4vw;
     bottom: 1vw;
@@ -94,7 +93,7 @@
     font-size: max(2vmin, 16px);
     margin-bottom: 0.4vw;
     margin-top: 20px;
-    color:#7E2D07;
+    color: #7E2D07;
 }
 
 .service-description {
@@ -109,7 +108,7 @@
 }
 
 .service-tarif {
-    font-size:  max(14px, 1.8vmin);
+    font-size: max(14px, 1.8vmin);
     color: #789d78;
 }
 
@@ -124,12 +123,12 @@
 
 .tarif-green {
     color: #789d78; 
-    font-size:  max(1.8vmin, 14px);
+    font-size: max(1.8vmin, 14px);
 }
 
 .tarif-black {
     color: black;
-    font-size:  max(1.8vmin, 14px);
+    font-size: max(1.8vmin, 14px);
 }
 
 .detail-container.active {
@@ -143,12 +142,12 @@
     right: 1.5vw;
     font-size: 1.5vw;
     cursor: pointer;
+    z-index: 10;
 }
-
 
 /* Titre tout en haut */
 .detail-title {
-    font-size:  max(12px, 1.5vw);
+    font-size: max(12px, 1.5vw);
     margin-bottom: 1vw;
     margin-top: 1vw;
     font-family: "Lovelace";
@@ -176,7 +175,7 @@
     margin-bottom: 10px;
     border-radius: 2vw;
     transition: all 0.3s ease-in-out;
-    overflow:scroll; 
+    overflow: scroll; 
 }
 
 .service-box img {
@@ -191,7 +190,6 @@
     color: #789d78;
     font-family: 'TtMd';
 }
-
 
 /* Bouton de découverte */
 .discover-button {
@@ -229,7 +227,7 @@
 .large-description-container {
     width: 100%;
     height: 100%;
-    padding: 1.5vh 2vw ;
+    padding: 1.5vh 2vw;
     background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 1vw;
     display: none;
@@ -239,7 +237,6 @@
     font-size: max(14px, 1.5vmin);
     color: black;
     line-height: 1.5;
-    
 }
 
 /* Expansion de la box */
@@ -264,11 +261,226 @@
 .footer-banner {
     width: 100%; 
     height: 20vh; 
-    background-color: rgb(225, 215, 200);
+     background-color: rgb(193, 178, 165);
 }
 
 .footer-banner-brown {
     width: 100%; 
     height: 20vh; 
     background-color: rgb(193, 178, 165);
+}
+
+.tarifs-mobile {
+    display: none;
+}
+
+.tarifs-desktop {
+    display: block;
+}
+
+/* ============ MEDIA QUERIES MOBILE ============ */
+@media (max-width: 768px) {
+    .tarifs-mobile {
+        display: block;
+    }
+    
+    .tarifs-desktop {
+        display: none !important;
+    }
+
+    /* Wrapper pour le menu déroulant - position fixe en haut */
+    .service-selector-wrapper {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        padding: 15px 5vw;
+        z-index: 50;
+        margin: 0;
+        width: 100vw;
+        background-color: rgb(193, 178, 165);
+    }
+
+    .service-selector {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        font-family: 'TtRg', sans-serif;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23789d78' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 12px;
+    }
+
+    .service-selector:focus {
+        outline: none;
+        border-color: #7E2D07;
+    }
+
+    /* Container de détails - commence sous le menu */
+    .detail-container {
+        position: relative;
+        margin-top: 180px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0 15px;
+        font-family: 'TtRg', sans-serif;
+        overflow-y: visible;
+        bottom: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .detail-container.active {
+        display: block;
+        visibility: visible;
+    }
+
+    /* Titre de la section - caché en mobile */
+    .detail-title {
+        display: none;
+    }
+
+    /* Bouton de fermeture - caché en mobile, visible en desktop */
+    .tarifs-mobile .close-btn {
+        display: none;
+    }
+    
+    .tarifs-desktop .close-btn {
+        display: block;
+    }
+
+    /* Chaque service box */
+    .service-box {
+        width: 100%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 20px;
+        border-radius: 15px;
+        padding: 15px;
+        transition: all 0.3s ease-in-out;
+        overflow: visible;
+    }
+
+    /* Layout mobile : image + titre en 2 colonnes, puis le reste en dessous */
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ligne avec image + nom du service côte à côte */
+    .image-title-row {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Image plus petite à gauche */
+    .service-box img.service-image {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Titre du service */
+    .service-title {
+        font-size: max(22px, 5vw);
+        margin: 0;
+        padding: 0;
+        color: #7E2D07;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+
+    /* Tarif - avant la description */
+    .service-tarif {
+        font-size: max(18px, 2vw);
+        color: #789d78;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Description courte - après le tarif */
+    .service-description {
+        font-size: max(18px, 2vw);
+        color: grey;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    /* Boutons - en dessous l'un de l'autre */
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .discover-button,
+    .appointment-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    .appointment-btn {
+        margin-left: 0;
+    }
+
+    /* Grande description */
+    .large-description-container {
+        width: 100%;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    .large-description {
+        font-size: 14px;
+        line-height: 1.6;
+        color: black;
+    }
+
+    .benefits-list {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+
+    .benefits-list li {
+        font-size: 13px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    /* Box étendue */
+    .service-box.expanded {
+        height: auto;
+        max-height: none;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
 }

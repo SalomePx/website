@@ -6,9 +6,15 @@
     <title>Reiki</title>
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" type="image/png" href="static/images/icon.png">
+    <script src="static/js/burger.js"></script>
 </head>
 <body>
     <nav class="navbar">
+        <div class="burger" aria-label="Menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo-container">
             <a href="/">
                 <img src="/static/images/logo_black.png" alt="Logo" class="navbar-logo">
@@ -35,6 +41,26 @@
             </div>
         </div>
     </nav>
+
+    <div id="mobile-drawer" class="mobile-drawer">
+        <span class="close-drawer">&times;</span>
+
+        <a href="/">Accueil</a>
+        <a href="/about">À propos</a>
+        <a href="/tarifs">Prestations & tarifs</a>
+        <a href="/formations">Formations</a>
+        <div class="drawer-dropdown">
+            <span id="drawer-dropdown-btn" class="drawer-dropdown-btn">Mes spécialités &#9662;</span>
+            <div id="drawer-dropdown-content" class="drawer-dropdown-content" style="display: none;">
+                <a href="/reiki">Reiki</a>
+                <a href="/hypnose">Hypnose</a>
+                <a href="/sophrologie">Sophrologie</a>
+                <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                <a href="/methodeleaa">Méthode LEAA</a>
+            </div>
+        </div>
+        <a href="/tarifs">Prendre rendez-vous</a>
+    </div>
 
 
     <!-- Container principal-->
@@ -122,7 +148,7 @@
                 <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
                     <img src="/static/images/wellfuz.png" alt="Wellfuz">
                 </a>
-                <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                <a href="https://www.ailesndavid.com/" target="_blank">
                     <img src="/static/images/ailesndavid.png" alt="Ailes N David">
                 </a>
             </div>
@@ -131,7 +157,7 @@
 
     <div class="footer2">
         <div class="footer2-socials">
-            <a href="https://www.instagram.com/harmonie_et_energie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+            <a href="https://www.instagram.com/energie_et_harmonie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
                 <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
             </a>
             <a href="https://www.facebook.com/share/1AJeK7VDrN/?mibextid=wwXIfr" target="_blank">

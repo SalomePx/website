@@ -7,6 +7,16 @@
 @import url('tarifs.css');
 @import url('formations.css');
 @import url('descriptions.css');
+@import url('burger.css');
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 @font-face {
     font-family: 'Lovelace';

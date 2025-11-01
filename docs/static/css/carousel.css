@@ -129,3 +129,60 @@
     margin-top: 20px;
 }
 
+@media (max-width: 900px) {
+    .carousel{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .carousel-container {
+        align-items: center;
+    }
+
+    .carousel-item p {
+        font-size:17px;
+    }
+
+    .carousel-item{
+        width: 90%;  
+    }
+
+    .carousel-item:first-child {
+        margin-left:30px; 
+    }
+
+    .carousel-item.next {
+        margin-left:20px; 
+    }
+    .carousel-item.next {
+        margin-left:10px; 
+    }
+    
+    .prev-btn, .next-btn {
+        top: 30%;
+        position: absolute;
+        background: black;
+        color: #fff;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-size: 28px;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .prev-btn { left: 6px; }
+    .next-btn { right: 6px; }
+    .prev-btn:active, .next-btn:active { opacity: 1; }
+
+    .carousel-controls{
+        display: none;
+    }
+
+    .carousel-item h3 {
+        font-size: 22px;
+        margin-top: 10px;
+        font-family: 'TtRg';
+    }
+}

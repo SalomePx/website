@@ -6,7 +6,7 @@
     <title>Tarifs</title>
     <style> 
         body {
-            background-color: rgb(225, 215, 200);
+            background-color: rgb(193, 178, 165);
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,9 +18,15 @@
     <link rel="stylesheet" href="static/css/main.css" >
     <link rel="icon" type="image/png" href="static/images/icon.png">
     <script src="static/js/tarifs.js"></script>
+    <script src="static/js/burger.js"></script>
 </head>
 <body>
     <nav class="navbar">
+        <div class="burger" aria-label="Menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo-container">
             <a href="/">
                 <img src="/static/images/logo_black.png" alt="Logo" class="navbar-logo">
@@ -48,7 +54,27 @@
         </div>
     </nav>
 
-    <div class="services-wrapper">
+    <div id="mobile-drawer" class="mobile-drawer">
+        <span class="close-drawer">&times;</span>
+
+        <a href="/">Accueil</a>
+        <a href="/about">À propos</a>
+        <a href="/tarifs">Prestations & tarifs</a>
+        <a href="/formations">Formations</a>
+        <div class="drawer-dropdown">
+            <span id="drawer-dropdown-btn" class="drawer-dropdown-btn">Mes spécialités &#9662;</span>
+            <div id="drawer-dropdown-content" class="drawer-dropdown-content" style="display: none;">
+                <a href="/reiki">Reiki</a>
+                <a href="/hypnose">Hypnose</a>
+                <a href="/sophrologie">Sophrologie</a>
+                <a href="/lienstransgenerationnels">Liens transgénérationnels</a>
+                <a href="/methodeleaa">Méthode LEAA</a>
+            </div>
+        </div>
+        <a href="/tarifs">Prendre rendez-vous</a>
+    </div>
+
+    <div class="services-wrapper tarifs-desktop">
         <div class="service-container"><img src="static/images/hypnose_quotidien.jpg" class="top-img-position" alt="Escaliers"></div>
         <div class="service-item" onclick="showDetail('Hypnose')">
             <span class="service-text">Hypnose <span class="chevron">></span></span>
@@ -76,10 +102,25 @@
         </div>
     </div>
 
-    <div id="detail-container" class="detail-container"></div>
+    <div id="detail-container-desktop" class="detail-container tarifs-desktop"></div>
+
+    <!-- Mobile View -->
+    <div class="service-selector-wrapper tarifs-mobile">
+        <select id="serviceSelect" class="service-selector">
+            <option value="">Choisissez une prestation</option>
+            <option value="Hypnose">Hypnose</option>
+            <option value="Méthode LEAA">Méthode LEAA</option>
+            <option value="Reiki">Reiki</option>
+            <option value="Liens transgénérationnels">Liens transgénérationnels</option>
+            <option value="Sophrologie">Sophrologie</option>
+        </select>
+    </div>
+
+    <div id="detail-container-mobile" class="detail-container tarifs-mobile"></div>
 
     <!-- Footer -->
     <div class="footer-banner"></div>
+    
     <footer class="footer">
         <div class="footer-info">
             <div class="footer-contact">
@@ -117,7 +158,7 @@
                 <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
                     <img src="/static/images/wellfuz.png" alt="Wellfuz">
                 </a>
-                <a href="https://wellfuz.com/laetitia-papereux/" target="_blank">
+                <a href="https://www.ailesndavid.com/" target="_blank">
                     <img src="/static/images/ailesndavid.png" alt="Ailes N David">
                 </a>
             </div>
@@ -126,7 +167,7 @@
 
     <div class="footer2">
         <div class="footer2-socials">
-            <a href="https://www.instagram.com/harmonie_et_energie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
+            <a href="https://www.instagram.com/energie_et_harmonie_by_l?igsh=ZHE3dTF0N3hlNzZz" target="_blank">
                 <img src="https://logos-marques.com/wp-content/uploads/2020/09/insta-logo.png" alt="Instagram">
             </a>
             <a href="https://www.facebook.com/share/1AJeK7VDrN/?mibextid=wwXIfr" target="_blank">
