@@ -246,3 +246,8 @@ body {
     
 }
 
+@media (max-width: 768px) {
+    .bottom-banner {
+        margin-top: 20px;
+    }
+}

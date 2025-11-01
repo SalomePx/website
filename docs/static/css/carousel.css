@@ -141,10 +141,12 @@
 
     .carousel-item p {
         font-size:17px;
+        font-family: 'TtRg', sans-serif;
     }
 
     .carousel-item{
         width: 90%;  
+        
     }
 
     .carousel-item:first-child {
